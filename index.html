@@ -20,23 +20,78 @@ Random link button- By JavaScript Kit (http://javascriptkit.com)
 Over 300+ free scripts!
 This credit MUST stay intact for use
 */
-
-//specify random links below. You can have as many as you want
-var randomlinks=new Array()
-
-randomlinks[0]="http://freewarejava.com"
-randomlinks[1]="http://javascriptkit.com"
-randomlinks[2]="http://dynamicdrive.com"
-randomlinks[3]="http://cnn.com"
-randomlinks[4]="http://www.geocities.com"
+var randomlinks_news=new Array()
 
 
-function randomlink(){
-window.location=randomlinks[Math.floor(Math.random()*randomlinks.length)]
+randomlinks_news[0]="https://www.stuff.co.nz/national/politics/122908468/election-2020-labour-promises-to-keep-tiwai-smelter-open-longer"
+randomlinks_news[1]="https://www.newshub.co.nz/home/new-zealand/2020/09/weather-live-updates-antarctic-blast-brings-severe-gales-heavy-snow-to-new-zealand.html"
+randomlinks_news[2]="https://www.nzherald.co.nz/nz/news/article.cfm?c_id=1&objectid=12368595"
+randomlinks_news[3]="https://www.stuff.co.nz/travel/travel-troubles/122912285/police-called-to-air-new-zealand-flight-from-auckland-to-napier-over-face-mask-spat"
+randomlinks_news[4]="https://www.rnz.co.nz/news/national/427119/tourism-industry-hopeful-about-pre-christmas-trans-tasman-bubble"
+
+
+function randomlink_news(){
+window.location=randomlinks_news[Math.floor(Math.random()*randomlinks_news.length)]
+
+
+
+var randomlinks_politics=new Array()
 }
 //-->
 </script>
+<script>
+var randomlinks_videos=new Array()
+randomlinks_videos[0]="https://www.youtube.com/watch?v=MPIpOdNmNGE&ab_channel=UnrealEngine"
+randomlinks_videos[1]="https://www.youtube.com/watch?v=9i4SKHbhbqk&ab_channel=GordonRamsay"
+randomlinks_videos[2]="https://vimeo.com/channels/staffpicks/453059073"
+randomlinks_videos[3]="https://vimeo.com/channels/staffpicks/448635405"
+randomlinks_videos[4]="https://www.youtube.com/watch?v=1Rkn6rnsgc4&ab_channel=timtimfed"
+function randomlink_videos(){
+window.location=randomlinks_videos[Math.floor(Math.random()*randomlinks_videos.length)]
+}
+</script>
+<script>
+var randomlinks_images=new Array()
 
+randomlinks_images[0]="https://i.imgur.com/lYHNYox.jpeg"
+randomlinks_images[1]="https://i.imgur.com/KZkDBd1.jpg"
+randomlinks_images[2]="https://i.redd.it/mp9klkn39qp51.jpg"
+randomlinks_images[3]="https://i.redd.it/z4h5rnnsnrp51.jpg"
+randomlinks_images[4]="https://i.redd.it/tc0zr59ejrp51.jpg"
+
+
+function randomlink_images(){
+window.location=randomlinks_images[Math.floor(Math.random()*randomlinks_images.length)]
+}
+</script>
+<script>
+var randomlinks_advertisments=new Array()
+
+randomlinks_advertisments[0]="https://www.dollarshaveclub.com/"
+randomlinks_advertisments[1]="https://www.grammarly.com/"
+randomlinks_advertisments[2]="https://www.squarespace.com/"
+randomlinks_advertisments[3]="https://www.audiobooks.com/"
+randomlinks_advertisments[4]="https://www.audible.com/ep/FreeListens"
+
+
+function randomlink_advertisments(){
+window.location=randomlinks_advertisments[Math.floor(Math.random()*randomlinks_advertisments.length)]
+}
+</script>
+<script>
+var randomlinks_random=new Array()
+
+randomlinks_random[0]="http://corndog.io/"
+randomlinks_random[1]="http://endless.horse/"
+randomlinks_random[2]="http://www.movenowthinklater.com/"
+randomlinks_random[3]="https://smashthewalls.com/"
+randomlinks_random[4]="http://www.rrrgggbbb.com/"
+
+
+function randomlink_random(){
+window.location=randomlinks_random[Math.floor(Math.random()*randomlinks_random.length)]
+}
+</script>
 
 	<nav>
 	<div><img src="images/logo.png" alt="logo" style="width:165px;height:60px;padding-left:50px;"><a/>
@@ -44,7 +99,7 @@ window.location=randomlinks[Math.floor(Math.random()*randomlinks.length)]
 			<a href="#one"></a>
 			<a href="#two"></a>
 			<a href="#three"></a>
-			<a href="#four">Login</a>
+			<a href="#four"></a>
 		<div/>
 
 	</nav>
@@ -60,35 +115,35 @@ window.location=randomlinks[Math.floor(Math.random()*randomlinks.length)]
 								<div/>
 							</header>
 							<section class="tiles" >
-								<article class="style1">
-									<span class="image">
-										<img src="images/green_bubble_1.png" alt="" target="_blank" onclick="randomlink()"/>
+								<article class="style1" >
+									<span class="image" >
+										<img src="images/green_bubble_1.png"  alt=""  onclick="randomlink_news()"/>
 									</span>
 	
 									</a>
 								</article>
 								<article class="style2">
 									<span class="image">
-										<img src="images/yellow_bubble_1.png" alt="" onclick="randomlink()" />
+										<img src="images/yellow_bubble_1.png" alt="" onclick="randomlink_videos()" />
 									</span>
 				
 								</article>
 								<article class="style3">
 									<span class="image">
-										<img src="images/red_Bubble_1.png" alt="" onclick="randomlink()"/>
+										<img src="images/red_Bubble_1.png" alt="" onclick="randomlink_images()"/>
 									</span>
 						
 								</article>
 								<article class="style4">
 									<span class="image">
-										<img src="images/orange_Bubble_1.png" alt="" onclick="randomlink()"/>
+										<img src="images/orange_Bubble_1.png" alt="" onclick="randomlink_advertisments()"/>
 									</span>
 					
 							
 								</article>
 								<article class="style5">
 									<span class="image">
-										<img src="images/blue_Bubble_1.png" alt="" onclick="randomlink()"/>
+										<img src="images/blue_Bubble_1.png" alt="" onclick="randomlink_random()"/>
 									</span>
 					
 								</article>
